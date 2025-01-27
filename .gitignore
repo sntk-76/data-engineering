@@ -205,3 +205,7 @@ terraform.rc
 # Ignor all the json files : 
 
 *.json
+
+# excluding the data mounting folder :
+
+"D:\other\project\data-engineering\docker\ny_taxi_postgres_data"
