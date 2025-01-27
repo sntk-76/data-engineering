@@ -91,3 +91,13 @@ docker network ls
 ssh -i ~/.ssh/GCP sinatavakoli2022@35.205.34.129
 
 
+docker run -it \
+ --network=docker_default \
+ ingest_data:v001 \
+  --user=root \
+  --password=root \
+  --host=pg_database \
+  --port=5432 \
+  --db=homework \
+  --table_name=green_taxi \
+  --url=${URL}
