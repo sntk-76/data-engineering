@@ -1,10 +1,11 @@
 services:
   postgres:
     image: postgres
+    container_name: postgres
     volumes:
       - D:\other\project\data-engineering\kestra\postgres_data:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: kestra
+      POSTGRES_DB: kestra_db
       POSTGRES_USER: kestra
       POSTGRES_PASSWORD: kestra
     healthcheck:
@@ -26,7 +27,7 @@ services:
       KESTRA_CONFIGURATION: |
         datasources:
           postgres:
-            url: jdbc:postgresql://postgres:5432/kestra
+            url: jdbc:postgresql://postgres:5432/kestra_db
             driverClassName: org.postgresql.Driver
             username: kestra
             password: kestra
