@@ -6,7 +6,11 @@ services:
       - POSTGRES_PASSWORD=root
       - POSTGRES_DB=ny_taxi_data
     volumes:
+<<<<<<< HEAD
       - "D:/other/project/data-engineering/docker/ny_taxi_postgres_data:/var/lib/postgresql/data"
+=======
+      - "/home/sinatavakoli2022/data-engineering/docker/ny_taxi_postgres_data:/var/lib/postgresql/data"
+>>>>>>> 5c14aa08b5c5b01ad57472bbb74402dceadcb649
     ports:
       - '5432:5432'
 

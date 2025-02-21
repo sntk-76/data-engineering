@@ -10,17 +10,17 @@ variable "location" {
 
 variable "bq_dataset_name" {
   description = "the name of the dataset"
-  default     = "demo_dataset"
+  default     = "ny_taxi_db"
 }
 
 variable "bucket_name" {
   description = "the name of the bucket"
-  default     = "acquired-clover-447309-c6-bucket"
+  default     = "ny-taxi-project-448909-bucket"
 }
 
 variable "project" {
   description = "the name of the project"
-  default     = "acquired-clover-447309-c6"
+  default     = "ny-taxi-project-448909"
 
 }
 
