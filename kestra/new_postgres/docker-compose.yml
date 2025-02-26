@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres
+    container_name: postgres_data
+    environment:
+      POSTGRES_USER: kestra
+      POSTGRES_PASSWORD: kestra
+      POSTGRES_DB: postgres-zoomcamp
+    volumes:
+      - D:\other\project\data-engineering\kestra\new_postgres\new_postgres_data:/var/lib/postgresql/data
+    networks:
+      - kestra_default
+    ports:
+      - 5432:5432
+networks:
+  kestra_default:
+    external: true
