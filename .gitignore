@@ -212,6 +212,10 @@ terraform.rc
 
 "D:\other\project\data-engineering\kestra"
 
+"D:/other/project/data-engineering/kestra/new_postgres/new_postgres_data/"
+"D:/other/project/data-engineering/docker/ny_taxi_postgres_data/"
+
+
 # ignor all the csv files : 
 
 *.csv
