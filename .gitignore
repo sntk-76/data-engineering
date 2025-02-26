@@ -212,3 +212,8 @@ terraform.rc
 
 "D:\other\project\data-engineering\kestra"
 
+# ignor all the csv files : 
+
+*.csv
+#ignor all the compreesed files : 
+*.gz
