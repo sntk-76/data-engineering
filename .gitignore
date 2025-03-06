@@ -209,6 +209,27 @@ terraform.rc
 # excluding the data mounting folder :
 
 "D:\other\project\data-engineering\docker\ny_taxi_postgres_data"
+"/home/sinatavakoli2022/data-engineering/docker/ny_taxi_postgres_data"
 
 "D:\other\project\data-engineering\kestra"
 
+"/home/sinatavakoli2022/data-engineering/kestra/kestra_data"
+
+"/home/sinatavakoli2022/data-engineering/kestra/new_postgres"
+
+"/home/sinatavakoli2022/data-engineering/kestra/postgres_data"
+
+<<<<<<< HEAD
+=======
+"D:/other/project/data-engineering/kestra/new_postgres/new_postgres_data/"
+"D:/other/project/data-engineering/docker/ny_taxi_postgres_data/"
+
+
+# ignor all the csv files : 
+
+*.csv
+#ignor all the compreesed files : 
+*.gz
+>>>>>>> a2d008f201249e7b588d523bfdff16bd174628b8
+#ignor all the parquet files : 
+*.parquet
